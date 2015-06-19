@@ -22,7 +22,20 @@ For a full comparison table, check out [SocialCompare](http://socialcompare.com/
 
 ## Can't paste images or rich text
 
+There are two types of pasting images:
+
+* From other web pages. In that case, a link to the remote image will be pasted.
+* From the system. This is equivalent to a drag&drop event, and the image needs to be effectively uploaded or converted to base64.
+ 
+Rich formatting is often tricky to paste. Two samples were used:
+
+* StackOverflow code
+* A [code block](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#constructorpatternjavascript) from @addyosmani's *JavaScript Patterns* online book 
+
+Results:
+
 1. [Froala WYSIWYG](https://froala.com/wysiwyg-editor) (jQuery) - can paste images, but [loses most of the rich formatting when pasting](https://github.com/froala/wysiwyg-editor/issues/552) before version 2
+- [Squire](http://neilj.github.io/Squire/) - used at Fastmail. [Rich text formatting loss](https://github.com/neilj/Squire/issues/95), [demo can't paste images from Windows applications](https://github.com/neilj/Squire/issues/93), but can paste if they're copied from web pages.
 - [Dante](https://github.com/michelson/Dante) (jQuery, Underscore) - [image pasting is supposed to work, but doesn't](https://github.com/michelson/Dante/issues/33)
 - [Wysihtml](http://wysihtml.com/) (vanilla) - actively-maintained fork of the Xing project; [loses rich text formatting when pasting](https://github.com/Voog/wysihtml/issues/180), [can't paste standalone images from clipboard](https://github.com/Voog/wysihtml/issues/163)
 - [MediumEditor](https://yabwe.github.io/medium-editor/) (vanilla) - [GitHub](https://github.com/yabwe/medium-editor) - [can't paste images](https://github.com/yabwe/medium-editor/issues/657) and loses formatting when pasting rich text
@@ -32,7 +45,6 @@ For a full comparison table, check out [SocialCompare](http://socialcompare.com/
 - [Medium.js](https://github.com/jakiestfu/Medium.js/) (vanilla), [can't paste images from clipboard](https://github.com/jakiestfu/Medium.js/issues/102)
 - [ZenPen](http://zenpen.io) - [can't paste images from clipboard](https://github.com/tholman/zenpen/issues/119)
 - [Pen](https://github.com/sofish/pen) (vanilla) - [can't paste images from clipboard](https://github.com/sofish/pen/issues/151)
-- [Squire](http://neilj.github.io/Squire/) - [can't paste images](https://github.com/neilj/Squire/issues/93)
 - [Hallo.js](http://hallojs.org/) - minimalistic jQueryUI plugin with floating toolbar; [can't paste images](https://github.com/bergie/hallo/issues/234)
 - [SCEditor](http://www.sceditor.com/) - [can't paste images](https://github.com/samclarke/SCEditor/issues/386)
 - [bootstrap3-wysiwyg](http://bootstrap-wysiwyg.github.io/bootstrap3-wysiwyg/) - [can't paste images from clipboard](https://github.com/bootstrap-wysiwyg/bootstrap3-wysiwyg/issues/143)
